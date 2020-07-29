@@ -142,5 +142,12 @@ menu "Thing Shadow"
         help
             Maximum length of a Thing Name.
 
+    config AWS_IOT_SHADOW_MAX_SIZE_OF_SHADOW_NAME
+        int "Maximum Shadow Name length"
+        default 30
+        range 4 1000
+        help
+            Maximum length of a Shadow Name.
+
 endmenu  # Thing Shadow
 endmenu  # AWS IoT
