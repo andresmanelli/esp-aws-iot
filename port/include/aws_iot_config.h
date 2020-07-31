@@ -58,6 +58,7 @@
 #define MAX_SIZE_OF_THING_NAME CONFIG_AWS_IOT_SHADOW_MAX_SIZE_OF_THING_NAME ///< The Thing Name should not be bigger than this value. Modify this if the Thing Name needs to be bigger
 #define MAX_SIZE_OF_SHADOW_NAME CONFIG_AWS_IOT_SHADOW_MAX_SIZE_OF_SHADOW_NAME ///< The Shadow Name should not be bigger than this value. Modify this if the Shadow Name needs to be bigger
 #define MAX_SHADOW_TOPIC_LENGTH_BYTES (MAX_SHADOW_TOPIC_LENGTH_WITHOUT_THINGNAME + MAX_SIZE_OF_THING_NAME) ///< This size includes the length of topic with Thing Name
+#define MAX_NUMBER_OF_SHADOWS CONFIG_AWS_IOT_SHADOW_MAX_SHADOWS ///< The maximum number of named shadows that can be managed
 
 // Auto Reconnect specific config
 #define AWS_IOT_MQTT_MIN_RECONNECT_WAIT_INTERVAL CONFIG_AWS_IOT_MQTT_MIN_RECONNECT_WAIT_INTERVAL ///< Minimum time before the First reconnect attempt is made as part of the exponential back-off algorithm

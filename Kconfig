@@ -149,5 +149,12 @@ menu "Thing Shadow"
         help
             Maximum length of a Shadow Name.
 
+    config AWS_IOT_SHADOW_MAX_SHADOWS
+        int "Maximum number of Shadows"
+        default 10
+        range 1 30
+        help
+            Maximum number of shadows that can be managed
+
 endmenu  # Thing Shadow
 endmenu  # AWS IoT
