@@ -156,5 +156,12 @@ menu "Thing Shadow"
         help
             Maximum number of shadows that can be managed
 
+    config AWS_IOT_SHADOW_MAX_DELTAS
+        int "Maximum number of deltas"
+        default 30
+        range 1 50
+        help
+            Maximum number of shadows that can be managed
+
 endmenu  # Thing Shadow
 endmenu  # AWS IoT
